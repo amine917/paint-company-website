@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="icons/NewPaintL.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.8.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>New Paints</title>
+</head>
+<svg class="svg" xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 500 500">
+    <title>Circular Text Path</title>
+
+    <defs>
+        <path id="textcircle" d="M250,400
+                        a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+    </defs>
+    <rect width="100%" height="100%" fill="none" />
+    <text>
+        <textPath xlink:href="#textcircle" aria-label="All for One &amp; One for All" textLength="942">WELCOME TO NEW
+            PAINTS. </textPath>
+    </text>
+
+</svg>
+<nav id="menu" role="navigation">
+
+    <ul>
+        <a class="activee" href="#">Acceuil</a>
+        <a href="#ser">Nos Services</a>
+        <a href="#about">A propos</a>
+        <a href="#img-contact">Contact</a>
+    </ul>
+</nav>
+<body>
+
+  <div class="big-container">
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <a href="/"><img src="icons/NewPaintL.svg"></a>
+                <a href="/">
+                    <h2>New Paints</h2>
+                </a>
+            </div>
+    
+            <nav>
+                <a class="activee" href="#">Acceuil</a>
+                <a href="#ser">Nos Services</a>
+                <a href="#about">A propos</a>
+                <a href="#img-contact">Contact</a>
+            </nav>
+            <!--
+                    <a href="#" class="donate-link"></a>
+           -->
+        </div>
+        <div class="burger-menu">
+            <svg>
+                <defs>
+                    <filter id="gooeyness">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                            result="gooeyness" />
+                        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+    
+    
+    
+    
+    
+            <div class="plate plate7" onclick="this.classList.toggle('active')">
+                <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 30,35 H 60 C 63.595663,35 65,32.357023 65,30 C 65,27.642977 62.357023,25 60,25 C 57.642977,25 55,25.933659 55,30 V 77.828008" />
+                    <path class="line line2"
+                        d="M 70,35 H 50 C 46.404337,35 45,32.357023 45,30 C 45,27.642977 47.642977,25 50,25 C 52.357023,25 55,25.933659 55,30 V 77.828008" />
+                    <path class="line line3"
+                        d="M 30,50 H 55 C 58.595665,50 60.000005,47.357023 60.000005,45 C 60.000005,42.642977 57.357025,40 55,40 C 52.642977,40 50,40.933659 50,45 V 92.828008" />
+                    <path class="line line4"
+                        d="M 70,50 H 45 C 41.404337,50 40,47.357023 40,45 C 40,42.642977 42.642977,40 45,40 C 47.357023,40 50,40.933659 50,45 V 92.828008" />
+                    <path class="line line5"
+                        d="M 30,65 H 50 C 53.595665,65 55.000005,62.357023 55.000005,60 C 55.000005,57.642977 52.357025,55 50,55 C 47.642977,55 45,55.933659 45,60 V 107.82801" />
+                    <path class="line line6"
+                        d="M 70,65 H 40 C 36.404337,65 35,62.357023 35,60 C 35,57.642977 37.642977,55 40,55 C 42.357023,55 45,55.933659 45,60 V 107.82801" />
+                </svg>
+                <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                    <path class="line" d="M 34,32 L 66,68" />
+                    <path class="line" d="M 66,32 L 34,68" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    
+    
+    <main>
+        <div id="slider">
+    
+            <div class="slider-inner">
+                <div id="slider-content">
+                    <div class="meta">
+                        <p>NewPaints</p>
+                    </div>
+                    <div id="slide-title">
+                        <h1>Bienvenue chez nous</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quis. Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Veniam expedita architecto quo nemo itaque dolorem quisquam
+                            iusto porro excepturi accusantium.</p>
+                    </div>
+                    <span data-slide-title="0">
+                        <h1>Lorem ipsum dolor</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quis. Lorem ipsum dolor sit,
+                            amet consectetur
+                            adipisicing elit. Veniam expedita architecto quo nemo itaque dolorem quisquam iusto porro
+                            excepturi accusantium.</p>
+                    </span>
+                    <span data-slide-title="1">
+                        <h1>Welcome to new paints</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quis. Lorem ipsum dolor sit,
+                            amet consectetur
+                            adipisicing elit. Veniam expedita architecto quo nemo itaque dolorem quisquam iusto porro
+                            excepturi accusantium.</p>
+                    </span>
+                    <span data-slide-title="2">
+                        <h1>Lorem ipsum dolor sit</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quis. Lorem ipsum dolor sit,
+                            amet consectetur
+                            adipisicing elit. Veniam expedita architecto quo nemo itaque dolorem quisquam iusto porro
+                            excepturi accusantium.</p>
+                    </span>
+                    <span data-slide-title="3">
+                        <h1> Omnis quidem optio eaque explicabo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, quis. Lorem ipsum dolor sit,
+                            amet consectetur
+                            adipisicing elit. Veniam expedita architecto quo nemo itaque dolorem quisquam iusto porro
+                            excepturi accusantium.</p>
+                    </span>
+                    <div class="button-container-2">
+                        <span class="mas">Contacter Nous</span>
+                        <a type="button" name="Hover" href="#img-contact">Contacter Nous</a>
+                    </div>
+    
+    
+                </div>
+            </div>
+            <div class="img img-1">
+            </div>
+            <div class="img img-2">
+    
+            </div>
+            <div class="img img-3">
+            </div>
+            <div class="img img-4">
+    
+    
+            </div>
+    
+    
+    
+    
+            <div id="pagination">
+                <button class="active" data-slide="0"></button>
+                <button data-slide="1"></button>
+                <button data-slide="2"></button>
+                <button data-slide="3"></button>
+            </div>
+    
+        </div>
+    </main>
+    
+    <section class="services" id="ser">
+        <h1>ce que nous offrons</h1>
+    
+        <div class="services-card">
+            <div class="card">
+                <span>1</span>
+                <h3>this is title</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                    blind texts.</p>
+            </div>
+            <div class="card">
+                <span>2</span>
+                <h3>this is title</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                    blind
+                    texts.</p>
+            </div>
+            <div class="card">
+                <span>3</span>
+                <h3>this is title</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                    blind
+                    texts.</p>
+            </div>
+            <div class="card">
+                <span>4</span>
+                <h3>this is title</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                    blind
+                    texts.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <section class="about" id="about">
+    
+        <div class="container-about">
+            <div class="green-back">
+                <div class="img-about"></div>
+            </div>
+    
+    
+    
+            <div class="about-text">
+                <h1>À propos de nous</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut harum, sit accusantium eveniet, quisquam
+                    expedita,
+                    laboriosam maxime cumque odit tempore officia est! Architecto sapiente laborum quis, harum quo, incidunt
+                    eius
+                    fugiat ut nesciunt nam delectus voluptas dicta error cupiditate blanditiis ab recusandae totam corrupti.
+                    Corporis numquam voluptas iure et quasi.</p>
+                <div class="button-container-2">
+                    <span class="mas">Contacter Nous</span>
+                    <a href="#img-contact">Contacter Nous</a>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    </section>
+    
+    <section class="img-section" id="img-contact">
+        <div class="left"></div>
+        <div class="contact">
+            <form class="form" id="form">
+                <h1>Contacter Nous</h1>
+                <input type="text" placeholder="Nom" name="from_name" required id="form-name">
+                <input type="email" placeholder="Email" name="email" required validate id="form-email">
+                <input type="text" placeholder="Numéro de Téléphone" minlength="9" name="number" required id="form-num"
+                    pattern="[0-9]*">
+                <textarea placeholder="Message" cols="30" name="message" rows="4" required id="form-msg"></textarea>
+                <div class="btn">
+                    <span class="mas">Envoyer</span>
+                    <button>
+                        Envoyer
+                    </button>
+                </div>
+    
+            </form>
+            <div class="text-cont">
+                <div class="text-info">
+                    <p>Contact Information</p>
+                    <p>We're open for any suggestion or just to have a chat</p>
+                </div>
+    
+                <div class="adrs">
+                    <div class="icon">
+                        <img src="icons/map-pin.svg" alt="">
+                    </div>
+                    <p>Address: 198 Wes
+                        t 21th Street, Suite 721 <br>New York NY 10016</p>
+                </div>
+                <div class="phone">
+                    <div class="icon">
+                        <img src="icons/phone.svg" alt="">
+                    </div>
+                    <p>Phone: + 1235 2355 98</p>
+                </div>
+                <div class="email">
+                    <div class="icon">
+                        <img src="icons/send.svg" alt="">
+                    </div>
+                    <p>Email: info@yoursite.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </section>
+    
+    
+    <section class="marks">
+        <h1>Nos Marques</h1>
+    
+        <div class="brands-imgs">
+            <div class="imgs-1">
+                <a class="img img-1" target="_blank" href="https://www.ferrara-design.it/">
+                </a>
+                <a class="img img-2" target="_blank" href="http://www.tixol.es" /></a>
+                <a class="img img-3" target="_blank" href="https://www.marmorinotools.it/en" /></a>
+                <a class="img img-4" /></a>
+            </div>
+            <div class="imgs-2">
+                <a class="img img-1"></a>
+                <a class="img img-2" target="_blank" href="https://www.nespoligroup.es"></a>
+                <a class="img img-3" target="_blank" href="https://www.decolor.com/fr" /></a>
+                <a class="img img-4"></a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-info">
+            <div class="footer-info-text">
+                <div class="lgo">
+                    <a href="#">
+                        <div class="logo"></div>
+                        <h1>New Paints</h1>
+                    </a>
+                </div>
+                <p>Address: <br>
+                    n&#176;398 lotis - Lot 407 Bir El Djir - ORAN
+                </p>
+                <p>Email: <br>
+                    compagny@email.com
+    
+                </p>
+                <p>Phones: <br>
+    
+                    +213 560 235 613 (Fix) <br>
+                    +213 560 235 613 (Mobile)<br>
+    
+                </p>
+            </div>
+            <div class="footer-info-map" id="map">
+    
+            </div>
+    
+        </div>
+        <div class="separator-w"></div>
+        <div class="footer-more">
+    
+    
+            <div class="social-icons">
+    
+    
+                <a href="#" class="social-link w-inline-block"><img src="./icons/604f7ad27fd4623f4369e4e7_Youtube.svg"
+                        width="30" alt="youtube" loading="lazy" class="social-icon" /></a>
+                <a href="https://www.facebook.com/SARLNEWPAINTSORAN/" class="social-link w-inline-block"
+                    target="_blank"><img src="./icons/5e19de931abe2cd62310c363_Facebook.svg" width="30" alt="facebook"
+                        loading="lazy" class="social-icon" /></a>
+                <a href="" class="social-link w-inline-block" target="_blank"><img
+                        src="./icons/5e4e39ab47c62082de2e8889_Instagram.svg" width="30" alt="instagram" loading="lazy"
+                        class="social-icon" /></a>
+            </div>
+        </div>
+        <div class="separator-w"></div>
+    
+        <div class="rights-reserved">
+            <div class="paragraph-xs credit">© 2022 All rights reserved.</div>
+            <div class="policy">
+                <a href="" class="link">Privacy</a>
+                <div class="separator-h small"></div>
+                <a href="" class="link">Terms</a>
+            </div>
+        </div>
+    </footer>
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+  </div>
+   
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    emailjs.init('KNezHXokecAhiXoHZ')
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"></script>
+    <script>
+/*
+  function clickEffect(e) {
+        var d = document.createElement("div");
+        d.className = "clickEffect";
+        d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
+        document.body.appendChild(d);
+        d.addEventListener('animationend', function () { d.parentElement.removeChild(d); }.bind(this));
+    }
+    document.addEventListener('click', clickEffect);*/
+
+
+      document.querySelector(".plate").addEventListener("click",e => {
+         
+         document.querySelector("#menu").classList.toggle("active");
+        document.querySelector("header").classList.toggle("active");
+         document.querySelector(".big-container").classList.toggle("active");
+
+      })
+
+
+         const circleSvg = document.querySelector('svg')
+       
+
+            let mouseX = 0
+            let mouseY = 0
+            //let intv = 0
+
+            window.addEventListener('mousemove', (event) => {
+                // circleSvg.style.top = event.clientY - 45;
+                // circleSvg.style.left = event.clientX - 45;
+
+                mouseY = (event.pageY / 16) - (45 / 16) + 'rem'
+                mouseX = (event.pageX / 16) - (45 / 16) + 'rem'
+
+
+            })
+
+            const mouseMove = () => {
+                //intv += 1
+                
+
+                circleSvg.style.top = mouseY
+                circleSvg.style.left = mouseX
+
+                //circleSvg.style.opacity = 1 + Math.sin(intv * .04)
+                //console.log(Math.sin(intv * .04))
+
+                window.requestAnimationFrame(mouseMove)
+            }
+
+            mouseMove()
+
+
+        
+
+              document.querySelectorAll("#menu a").forEach(el => {
+
+                    el.addEventListener("click", e => {
+                             document.querySelector("#menu").classList.remove("active");
+                        document.querySelector("header").classList.remove("active");
+                        document.querySelector(".big-container").classList.remove("active");
+                        document.querySelector(".plate").classList.remove("active");
+                    })
+
+                })
+
+        
+
+
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40525870-5');
+    </script>
+    <script src="app.js"></script>
+</html>
+
+
+
+
+                    <!--
+                                        <div class="meta">Status</div>
+                                        <div id="slide-status">
+                                                <button class="btn-cta from-left">Contacter Nous</button>
+                                        </div>
+                                        <span data-slide-status="0">
+                                           <button class="btn-cta from-left">Contacter Nous</button>
+                                        </span>
+                                        <span data-slide-status="1">
+                                                <button class="btn-cta from-left">Contacter Nous</button>
+                                        </span>
+                                        <span data-slide-status="2">
+                                                <button class="btn-cta from-left">Contacter Nous</button>
+                                        </span>
+                                        <span data-slide-status="3">
+                                                <button class="btn-cta from-left">Contacter Nous</button>
+                                        </span>
+                                        -->

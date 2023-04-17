@@ -1,0 +1,22 @@
+{
+    "workbench.colorCustomizations": {
+        "terminal.background": "#333333",
+        "terminal.ansiBlack": "#FFFFFF",
+        "terminal.ansiBlue": "#795DA3",
+        "terminal.ansiBrightBlack": "#969896",
+        "terminal.ansiBrightBlue": "#795DA3",
+        "terminal.ansiBrightCyan": "#48eb08",
+        "terminal.ansiBrightGreen": "#48eb08",
+        "terminal.ansiBrightMagenta": "#48eb08",
+        "terminal.ansiBrightRed": "#cf250e",
+        "terminal.ansiBrightWhite": "#FFFFFF",
+        "terminal.ansiBrightYellow": "#795DA3",
+        "terminal.ansiCyan": "#183691",
+        "terminal.ansiGreen": "#48eb08",
+        "terminal.ansiMagenta": "#e61375",
+        "terminal.ansiRed": "#cf250e",
+        "terminal.ansiWhite": "#e61375",
+        "terminal.ansiYellow": "#795DA3"
+    },
+    "liveServer.settings.port": 5501
+}
